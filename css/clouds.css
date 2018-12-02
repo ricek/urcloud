@@ -1,0 +1,80 @@
+#clouds img { max-width: 90%; }
+
+#clouds div { float: left; }
+
+/* dividing into half for layout */
+#left { width: 70%; }
+#right { width: 30%; }
+
+/* left side is split into 3 layers */
+#top { width: 100%; }
+#mid { width: 100%; }
+#bottom { width: 100%; }
+
+/* top layer */
+#cirrocumulus { width: 45%; }
+
+/* top layer */
+#cirrus { width: 55%; }
+
+#cirrus img {
+    padding-top: 5%;
+}
+
+/* mid layer */
+#altocumulus { width: 50%; }
+
+#altocumulus img {
+    padding-left: 20%;
+    padding-top: 15%;
+    
+}
+
+/* mid layer */
+#altostratus { width: 50%; }
+
+#altostratus img {
+    padding-top: 5%;
+}
+
+
+/* btm layer */
+#stratocumulus { width: 40%; }
+
+#stratocumulus img {
+    padding-top: 20%;
+}
+
+/* btm layer */
+#stratus { width: 40%; }
+
+#stratus img {
+    padding-top: 35%;
+}
+
+#cumulus { width: 20%; }
+
+/* right side layer */
+#cumulonimbus { width: 100%; }
+
+#thunder { width: 80%; }
+
+#thunder img {
+    margin-top: -43%;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-30%);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+#clouds img:hover {
+    animation: float 4s ease-in-out infinite;
+}

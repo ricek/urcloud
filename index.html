@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>urCloud - buy your own cloud</title>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/clouds.css">
+        <style>
+            .mySlides { display: none; }
+        </style>
+    </head>
+    <body>
+        <!-- wrapper -->
+        <div id="wrapper">
+            <div id="top">
+                <div id="nav">
+                    <span><a href="index.html"><img src="images/logo.png"></a></span>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="html/products.html">Products</a></li>
+                        <li><a href="html/support.html">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="slideshow">
+                <img class="mySlides" src="images/slides/cc.jpg">
+                <img class="mySlides" src="images/slides/ci.jpg">
+                <img class="mySlides" src="images/slides/ac.jpg">
+                <img class="mySlides" src="images/slides/as.jpg">
+                <img class="mySlides" src="images/slides/sc.jpg">
+                <img class="mySlides" src="images/slides/st.jpg">
+                <img class="mySlides" src="images/slides/cu.jpg">
+                <img class="mySlides" src="images/slides/cb.jpg">
+                <img class="mySlides" src="images/slides/th.jpg">
+            </div>
+            <div id="quotes">
+                <blockquote><p>With cloud, I am now able to fully enjoy my life! It is going to be the next big thing."</p></blockquote>
+                <cite><span>Liang Gao</span><br>
+                    Student<br>
+                    Stony Brook University
+                </cite>
+            </div>
+            <div id="clouds">
+                <div id="left">
+                    <div id="top">
+                        <a href="html/products/cirrocumulus.html"><div id="cirrocumulus"><img src="images/clouds/cirrocumulus.png"></div></a>
+                        <a href="html/products/cirrus.html"><div id="cirrus"><img src="images/clouds/cirrus.png"></div></a>
+                    </div>
+                    <div id="mid">
+                        <a href="html/products/altocumulus.html"><div id="altocumulus"><img src="images/clouds/altocumulus.png"></div></a>
+                        <a href="html/products/altostratus.html"><div id="altostratus"><img src="images/clouds/altostratus.png"></div></a>
+                    </div>
+                    <div id="bottom">
+                        <a href="html/products/stratocumulus.html"><div id="stratocumulus"><img src="images/clouds/stratocumulus.png"></div></a>
+                        <a href="html/products/stratus.html"><div id="stratus"><img src="images/clouds/stratus.png"></div></a>
+                        <a href="html/products/cumulus.html"><div id="cumulus"><img src="images/clouds/cumulus.png"></div></a>
+                    </div>
+                </div>
+                <div id="right">
+                    <a href="html/products/cummulonimbus.html"><div id="cumulonimbus"><img src="images/clouds/cumulonimbus.png"></div></a>
+                    <a href="html/products/thunder.html"><div id="thunder"><img src="images/clouds/thunder.png"></div></a>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>&copy; 2018 urCloud - <a href="html/about.html">About</a> - <a href="html/tos.html">Terms of Service</a></p>
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                   x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+    </body>
+</html>
